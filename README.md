@@ -25,3 +25,4 @@ The problem with chaining APIs in TypeScript is that they are recursive which ma
 
 1. https://github.com/microsoft/TypeScript/issues/30020
 2. https://stackoverflow.com/questions/79232154/how-to-build-context-in-chaining-api-without-instantiation-limit?noredirect=1#comment139717622_79232154
+3. https://www.reddit.com/r/typescript/comments/1c3r9gx/what_are_some_good_strategies_to_avoid_type/
