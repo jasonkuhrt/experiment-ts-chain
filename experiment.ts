@@ -279,7 +279,7 @@ const c = chain
   .addAndSetIfFirst(t93)
   .addAndSetIfFirst(t94)
   .addAndSetIfFirst(t95)
-  // .addAndSetIfFirst(t96) // <-- fails here with approach "explicit recreate + type parameter"
+  .addAndSetIfFirst(t96) // <-- fails here with approach "explicit recreate + type parameter"
   //-------------------- 
   // .addAndSetIfFirst(t97)
   // .addAndSetIfFirst(t98)
