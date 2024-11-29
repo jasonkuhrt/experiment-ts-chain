@@ -1,4 +1,6 @@
-import {Chain, ContextEmpty} from './definition.js'
+// import {chain} from '../approach-1-mapped-and-conditional/definition.js'
+// import {chain} from '../approach-2-explicit-recreate/definition.js'
+import {chain} from './approach-3-type-parameter/definition.js'
 
 
 declare const t1: { name: 't1' }
@@ -102,7 +104,6 @@ declare const t98: { name: 't98' }
 declare const t99: { name: 't99' }
 declare const t100: { name: 't100' }
 
-declare const chain: Chain<ContextEmpty>
 const c = chain
   .addAndSetIfFirst(t1)
   .set('t1')
