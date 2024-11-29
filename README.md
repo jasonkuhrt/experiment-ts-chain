@@ -12,14 +12,15 @@ The problem with chaining APIs in TypeScript is that they are recursive which ma
 
 ## Experiment Setup
 
-- One module that has an example chaining api followed by excessive usage of it to the point of hitting the TypeScript limit.
-- Different versions of the chaining api, one usable at a time, the others commented out.
+- Multiple approaches separated into their own modules
+- Test modules co-located or otherwise using the top-level test suite module.
 
 ## Findings
 
 - No way found to never hit the limits.
 - Different approaches yield different points at which limits are hit.
 - Approach that yielded maximum chain size was "explicit recreate + type parameter".
+- Can achieve extensible chaining API
 
 ## References
 
