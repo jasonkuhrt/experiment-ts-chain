@@ -104,7 +104,7 @@ declare const t98: { name: 't98' }
 declare const t99: { name: 't99' }
 declare const t100: { name: 't100' }
 
-const c = chain
+const ctx = chain
   .addAndSetIfFirst(t1)
   .set('t1')
   .addAndSetIfFirst(t2)
@@ -205,7 +205,7 @@ const c = chain
   .addAndSetIfFirst(t93)
   .addAndSetIfFirst(t94)
   .addAndSetIfFirst(t95)
-  .addAndSetIfFirst(t96) // <-- fails here with approach "explicit recreate + type parameter"
+  // .addAndSetIfFirst(t96) // <-- fails here with approach "explicit recreate + type parameter"
   //-------------------- 
   // .addAndSetIfFirst(t97)
   // .addAndSetIfFirst(t98)
@@ -214,5 +214,5 @@ const c = chain
   .set('t38')
   ._
 
-type c = typeof c
-c.current
+type ctx = typeof ctx
+ctx
